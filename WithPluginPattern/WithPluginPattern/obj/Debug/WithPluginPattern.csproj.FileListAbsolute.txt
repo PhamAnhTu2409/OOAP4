@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\OOAP4\WithPluginPattern\WithPluginPattern\bin\Debug\WithPluginPattern.exe.config
+C:\Users\Administrator\Desktop\OOAP4\WithPluginPattern\WithPluginPattern\bin\Debug\WithPluginPattern.exe
+C:\Users\Administrator\Desktop\OOAP4\WithPluginPattern\WithPluginPattern\bin\Debug\WithPluginPattern.pdb
+C:\Users\Administrator\Desktop\OOAP4\WithPluginPattern\WithPluginPattern\obj\Debug\WithPluginPattern.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\OOAP4\WithPluginPattern\WithPluginPattern\obj\Debug\WithPluginPattern.Form1.resources
+C:\Users\Administrator\Desktop\OOAP4\WithPluginPattern\WithPluginPattern\obj\Debug\WithPluginPattern.Properties.Resources.resources
+C:\Users\Administrator\Desktop\OOAP4\WithPluginPattern\WithPluginPattern\obj\Debug\WithPluginPattern.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\OOAP4\WithPluginPattern\WithPluginPattern\obj\Debug\WithPluginPattern.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\OOAP4\WithPluginPattern\WithPluginPattern\obj\Debug\WithPluginPattern.exe
+C:\Users\Administrator\Desktop\OOAP4\WithPluginPattern\WithPluginPattern\obj\Debug\WithPluginPattern.pdb
