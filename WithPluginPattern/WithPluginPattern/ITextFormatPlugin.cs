@@ -104,4 +104,23 @@ namespace WithPluginPattern
             return formattedText.ToString();
         }
     }
+    public class PluginManager
+    {
+        private List<ITextFormatPlugin> _plugins = new List<ITextFormatPlugin>();
+
+        public void AddPlugin(ITextFormatPlugin plugin)
+        {
+            _plugins.Add(plugin);
+        }
+
+        public void RemovePlugin(ITextFormatPlugin plugin)
+        {
+            _plugins.Remove(plugin);
+        }
+
+        public List<ITextFormatPlugin> GetPlugins()
+        {
+            return _plugins;
+        }
+    }
 }

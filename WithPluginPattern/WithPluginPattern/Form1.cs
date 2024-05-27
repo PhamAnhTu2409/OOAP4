@@ -12,33 +12,25 @@ namespace WithPluginPattern
 {
     public partial class Form1 : Form
     {
-        private List<ITextFormatPlugin> _plugins;
-        //List<Product> products = new List<Product>();
+        PluginManager _pluginManager = new PluginManager();
+
         public Form1()
         {
             InitializeComponent();
             InitializePlugins();
-            PopulateComboBox();
-      
         }
         private void InitializePlugins()
         {
-            // Khởi tạo danh sách các plugin
-            _plugins = new List<ITextFormatPlugin>
-            {
-                new PlainTextPlugin(),
-                new MarkdownPlugin(),
-                new HtmlPlugin()
-            };
-        }
-        private void PopulateComboBox()
-        {
 
-            foreach (var plugin in _plugins)
+            _pluginManager.AddPlugin(new PlainTextPlugin());
+            _pluginManager.AddPlugin(new MarkdownPlugin());
+            _pluginManager.AddPlugin(new HtmlPlugin());
+
+            foreach (var plugin in _pluginManager.GetPlugins())
             {
                 comboBoxFormats.Items.Add(plugin.Name);
             }
-            
+
             comboBoxFormats.SelectedIndex = 0;
         }
        
@@ -51,7 +43,8 @@ namespace WithPluginPattern
             string[] lines = text.Split(new string[] { "\r\n", "\n" }, StringSplitOptions.None);
             string[] lines1 = text1.Split(new string[] { "\r\n", "\n" }, StringSplitOptions.None);
 
-            var selectedPlugin = _plugins[comboBoxFormats.SelectedIndex];
+            var plugins = _pluginManager.GetPlugins();
+            var selectedPlugin = plugins[comboBoxFormats.SelectedIndex];
             
             if (tabControl1.SelectedTab == tabPage1)
             {
@@ -71,7 +64,8 @@ namespace WithPluginPattern
             textBoxOutput.Clear();
         }
         
+        
     }
-
+    
 
 }
